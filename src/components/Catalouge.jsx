@@ -1,7 +1,7 @@
 import React from 'react';
 import Card from './Card';
 import '../Styles/Catalouge.css';
-import cardimg1 from '../assets/signlang2.jpg';
+import cardimg1 from '../assets/signlang.jpg';
 import cardimg2 from '../assets/hologram.jpg';
 import cardimg3 from '../assets/banner.jpg';
 
@@ -19,26 +19,16 @@ const cardsData = [
   {
     image: cardimg3,
     title: 'Versatile and Personalizable',
-    paragraph: 'Detachable frame with interchangeable frames using magnetic connectors, allowing users to personalize their device..',
+    paragraph: 'Detachable frame with interchangeable frames using magnetic connectors, allowing users to personalize their device.',
   },
-  // {
-  //   image: cardimg1,
-  //   title: 'Title 4',
-  //   paragraph: 'Phasellus dignissim, massa nec volutpat blandit, lorem libero ullamcorper metus, eget pharetra urna justo ut odio.',
-  // },
-  // {
-  //   image: cardimg1,
-  //   title: 'Title 5',
-  //   paragraph: 'Phasellus dignissim, massa nec volutpat blandit, lorem libero ullamcorper metus, eget pharetra urna justo ut odio.',
-  // },
 ];
 
 const Catalouge = () => {
   return (
     <div className='catalouge_container'>
-      <div className='catalouge_title'>
+      {/* <div className='catalouge_title'>
         Product Highlights
-      </div>
+      </div> */}
       <div className='catalouge_main'>
         {cardsData.map((card, index) => (
           <Card
@@ -46,6 +36,7 @@ const Catalouge = () => {
             image={card.image}
             title={card.title}
             paragraph={card.paragraph}
+            isImageLeft={index % 2 === 0} // Alternates image position
           />
         ))}
       </div>

@@ -1,10 +1,13 @@
 import React from 'react';
 import '../Styles/Testimonials.css';
-import customer1 from '../assets/logotemp.svg'; // Add your review images
-import review1 from '../assets/product.webp'; // Add your customer images
+import customer1 from '../assets/company/meta.png'; 
+import customer2 from '../assets/company/shopify.png'; 
+import customer3 from '../assets/company/starbucks.png'; 
+import customer4 from '../assets/company/tesla.png'; 
+import review1 from '../assets/product.webp'; 
 
 const Testimonials = () => {
-  const customers = [customer1, customer1, customer1, customer1, customer1, customer1]; // Add your customer images here
+  const customers = [customer1, customer2, customer3, customer4]; // Add your customer images here
   const reviews = [review1, review1, review1, review1, review1, review1]; // Add your review images here
 
   return (

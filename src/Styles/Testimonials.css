@@ -15,6 +15,7 @@
     margin-bottom: 50px;
     color: black;
     border-bottom: solid rgb(168, 168, 168) 2px ;
+    border-top: solid rgb(168, 168, 168) 2px ;
     width: fit-content;
   }
   
@@ -36,6 +37,7 @@
     animation: marquee 20s linear infinite;
   }
   
+  
   .marquee.reverse {
     animation: marquee 20s linear infinite reverse;
   }
@@ -45,15 +47,18 @@
   }
   
   .testimonial_card {
-    display: inline-block;
-    width: 30vw;
-    height: 300px;
+    display: flex;
+    width: 25vw;
+    height: 45vh;
     margin: 25px 20px;
+    border-radius: 50%;
+    /* background-color: black; */
+    justify-content: center;
   }
   
   .testimonial_card img {
-    width: 100%;
-    height: 100%;
+    width:20vw;
+    /* height: auto; */
     object-fit: cover;
     border-radius: 8px;
   }
